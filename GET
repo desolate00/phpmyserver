@@ -1,0 +1,3 @@
+// Обработка GET-запроса (проверка статуса)
+if ($_SERVER['REQUEST_METHOD'] === 'GET') {
+    echo json_encode(['status' => 'register endpoint', 'method' => $_SERVER['REQUEST_METHOD']]);
